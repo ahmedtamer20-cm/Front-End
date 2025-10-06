@@ -1,0 +1,36 @@
+body{
+    background: rgb(4, 3, 53);
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+form{
+    background:rgba(61, 197, 174, 0.219);
+    padding: 5px;
+    border-radius: 5%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+form input{
+    background-color: rgba(127, 255, 212, 0.055);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    width: 200px;
+    flex-grow: 1;
+}
+ form button{
+width: 100px;
+border: none;
+cursor: pointer;
+background-color: rgba(76, 0, 255, 0.096);
+padding: 10px;
+color: white;
+flex-grow: 1;
+ }
+    

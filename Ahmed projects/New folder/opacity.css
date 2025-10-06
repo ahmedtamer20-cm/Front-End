@@ -1,0 +1,12 @@
+.first{
+    background: red;
+    /* visibility: hidden; */
+    opacity: 0;
+    text-align: center;
+
+}
+/* display : none  بتمسح العنصر  */
+.second{
+    background-color: aqua;
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+.parent{
+    background-color: aqua;
+}
+.red{ background-color: red;
+    width: 50px;
+height: 50px;
+}
+.green{
+background-color: green;
+    width: 50px;
+    height: 50px;
+}
+.blue{
+background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+.float{
+    float: right;
+}
+.clear{
+    clear: both;
+}

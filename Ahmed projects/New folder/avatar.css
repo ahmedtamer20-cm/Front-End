@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    font-family: sans-serif;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient( to right, rgb(1, 1, 26),rgba(1, 0, 15, 0.973));
+width: 100vh;
+height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.allAVATAR{
+    background-image: 
+    linear-gradient(to right , #01022de5 30% ,#00000044) ,url(avatar.webp) ;
+   background-repeat: no-repeat;
+   background-position: center;
+    width: 100vh;
+    height: 640px;
+
+
+}
+.allAVATAR:hover{
+    background-image: 
+    linear-gradient(to right, #01022ddc 30% , transparent) ,url(avatar.webp);
+}
+header a{
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+  ul {
+    list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+ul a{
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+}
+ul a:hover{
+    color: rgb(29, 29, 150);
+    font-size: 20px;
+      border-bottom: 2px solid
+}
+
+.content{
+    color:white;
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+
+}
+p{
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    width: 350px;
+    pad: 20px 0;
+    margin-left: 30px;
+}
+h2{
+    font-size: 100px;
+    font-weight: 600;
+}
+

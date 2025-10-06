@@ -1,0 +1,30 @@
+legend{
+    text-align: center;
+    border-bottom: double 1px;
+    color:rgb(3, 49, 45);
+    transform: scale(1.);
+    
+/* font-variant: small-caps; */
+
+text-shadow: 0px .5px 2px black;
+
+    
+}
+form{
+    margin-top: 5%;
+    width: auto;
+
+}
+div{
+    font-weight: 550;
+}
+fieldset{
+    border-radius: 5%;
+    
+}
+
+    
+
+
+    
+

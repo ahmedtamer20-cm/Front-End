@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(11, 41, 139);
+}
+
+
+table{
+    width: 100%;
+    text-align: center;
+    color: antiquewhite;
+     border-spacing: 8px;
+    /* margin-left: 150px;  */
+} 
+td, th{
+    background-color: rgba(17, 2, 27, 0.493);
+    margin: 20px;
+    border-radius: 5px;
+    height: 40px;
+    font-size:25;
+    
+}
+th{
+    background-color: rgba(21, 103, 124, 0.596);
+}
+td:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+.img{
+    margin-bottom: 50px;
+    margin-left: 10px;
+    width:50px ;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+    
+}
+.img img{
+    width: 100%;
+
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+.profile h2{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow:2px 3px 2px rgba(56, 187, 143, 0.322);
+    margin-bottom: 50px;
+}
+.menu{
+    background-color: rgba(3, 11, 49, 0.897);
+    width: 73px;
+    height: 95vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .3s;
+    border-radius: 50px;
+
+}
+
+.menu:hover{
+    width: 260px;
+    
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a:hover{
+    gap:55px;
+    padding: 20px;
+    margin: 10px;
+    
+}
+ul li i:hover{
+    font-size: 35px;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    
+    padding: 10px;
+    margin: 10px;
+    border-radius: 300px;
+    display: flex;
+    text-align: center;
+    gap:55px;
+    transition: .2s;
+}
+ul li p{
+    position: relative;
+    bottom: -8px;
+    
+}
+ul li a:hover  , .data-info .box:hover{
+    background-color:rgba(255,255,255,0.1);
+}
+ul li i{
+    transition: .2s;
+}
+.logout{
+    position: absolute;
+    bottom:0 ;
+    width: 100%;
+}
+.logout a{
+    background: rgba(255, 0, 0, 0.308);
+}
+ul li a i{
+    color: rgb(59, 194, 171);
+    font-size: 30px;
+}

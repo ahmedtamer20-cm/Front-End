@@ -1,0 +1,81 @@
+.parent{
+    background: gold;
+    padding: 10px;
+    display :flex;
+    
+    height: 700px;
+    /* flex-flow: column ;
+    
+    justify-content: space-evenly;
+  
+    align-items: flex-end;
+    align-content: center; */
+  
+flex-direction: column;
+    
+}
+.parent div{
+    padding: 10px;
+    gap: 10px;
+    
+}
+.item1{
+    background: green;
+    text-align: center;
+    
+/* flex: grow shrink basis; */
+/* flex: 1 0 100px; */
+
+}  
+.item2{
+    background: rgb(77, 0, 128);
+    
+    text-align: center;
+    
+    
+}
+.item3{
+    background: rgb(13, 0, 128);
+    
+    text-align: center;
+    
+}
+.item4{
+    background: rgb(128, 62, 0);
+    
+    
+    text-align: center;
+}
+.item5{
+    background: rgb(128, 0, 11);
+}
+.item6{
+    background: rgb(78, 104, 175);
+} 
+/* flex-flow: 1-column
+    2- row
+    3-row row-reverse
+    4-column-reverse
+    5-wrap/nowrap */
+
+      /* justify-content:للاماكن بتاخد منك كذا قيمة منهم 
+    1- flex-start 
+    2-flex-end
+    3-space-arround 
+    4- space-between
+    5-space-evenly */
+
+     /* لاوم wrap  فى ال align-content: ; */ 
+
+
+     /* ايه الفرق بين ال align-content و align-itema
+     اولا كونتنت لازم يكون ال flex-flow  فيه wrap 1-
+     2-انما ال items  عادى مش لازم wrap
+     3-align items بتعمل فرق كبير بين العناصر لو كتير
+     4-انما ال content لا فرق صغير
+     5- content اقدر تكتب فيها ال space-arround,evenly,between
+     6- items لا */
+
+
+/* 
+flex-basis لو الاتجاخ row بتعمل عمل العرض والعكس صحيح */

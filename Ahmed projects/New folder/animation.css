@@ -1,0 +1,58 @@
+body{
+    background: black;
+    
+}
+div{
+    height: 100px;
+    width: 100px;
+    background: red;
+     animation-name:x ; 
+    animation-duration: 5s; 
+    animation-delay: .5s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate-reverse; 
+    animation-timing-function: linear; 
+    animation-fill-mode: both; 
+    animation-play-state: running; 
+    
+
+
+    
+}
+@keyframes x { 
+0%{
+    translate: 0 0;
+    rotate: 0;
+    background: aqua;
+}
+ 25%{
+    translate: 0 500px;
+    rotate: 90deg;
+}
+50%{
+    translate: 400px 500px;
+    rotate: 180deg;
+}
+ 75%{
+    translate: 400px 0px;
+    rotate:270deg ;
+}
+100%{
+    translate: 0 0 ;
+    rotate: 360deg;
+    background: darkgrey;
+}
+    /* 0%{background: red;
+width: 0px;
+    }
+    50%{
+        background: burlywood;
+    }
+    100%{
+background: blue;
+ width: 100%;   } */
+}
+div:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}

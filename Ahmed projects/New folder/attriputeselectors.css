@@ -1,0 +1,15 @@
+[placeholder]{
+    background-color: red;
+}
+/* 
+1-[attr]
+elemnt[attr]
+3-[ATTR="value"]
+4-[attr ^
+*/
+input[type]{
+    background-color: red;
+}
+[type="submit"]{
+    background-color: red;
+}

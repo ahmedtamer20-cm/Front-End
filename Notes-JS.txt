@@ -1,0 +1,994 @@
+
+
+
+
+
+
+// window.alert("HELOO FROM JS FILE")
+// document.write("<h1>hello</h1>"); اكتب كانوا HTML
+console.log("log")
+// console.eror("error")
+// console.table(["osama" , "ahmed" ]);
+console.log("Hello from %c js %cfile" , "color:red; font-size:40px " , "color:blue; font-size:40px" )
+// %c---> directive
+// document.createElement("")
+
+// -------------------------------------------------------------------------
+
+
+// ES6
+// ecma script
+
+
+----------------------------------------------------------------------------*///////////////////////////-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+
+// let a = "10";
+// let b = 20;
+// let c = "true";
+// console.log(a- b - c)
+// console.log(" - 2")
+
+// -----------------------------------------------------------------------------------------------------------
+// let a = 20;
+// a = a+20  or a += value   
+-------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+                    ---------------------------------------/*Start Data Types*/---------------------------------------
+
+  /* Data types:
+  1- string
+  2-number
+  3- Array-->objects --> no. 3 and 4
+  5- boolean
+  6-undefined
+  */
+*************************************************************
+  // console.log("Ahmed tamer");
+// /*1-*/ console.log(typeof "Ahmed tamer");
+// /*2-*/console.log(typeof 5000);
+// /*3-*/console.log(typeof [10 ,15 ,20]);
+// /*4-*/console.log(typeof {name:"osama" , age:17})
+// /*5-*/console.log(typeof true)
+// /*6-*/console.log(typeof undefined);
+
+// معلومة id in html .innerHTML = "new name"
+// like: hello.innerHtml = "option"
+ ------------------------------------------------/*((((((((End Data Types))))))))*/---------------------------------------
+//  ------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+-*--*-*-*-**-***-*-*-*-*-*-*-*-*-----*-*-*-*-*-*-*-*-*-*--*-/*Start Variables*/--*----*-*-*-*-*-**-*--**-*--**-*-*-*-*-*-*-
+
+/*                                ------------------------------variables------------------------------
+1-var
+1-Redeclare---> var a = 1;     result=true
+var a = 2;
+2-Access Before Declare(console.log before var  ---> undefnied)
+3- variable scope drama()
+3-var aabb = 1; ---->  find in window
+
+
+
+
+
+2-let
+1-Redeclare---> let a = 1; (result=false)
+let a = 2;
+2-Access Before Declare(console.log before let  ---> error)
+3- variable scope drama()
+3-let aabb = 1; ---> not  find in window
+// -------------------------------------------------------------------------------------------------------------------
+
+
+3-const
+1- Redeclare----> const  a = 1;   (result=false)
+const a = 2;
+2-Access Before Declare(console.log before const  ---> error)
+3- variable scope drama()
+3-const aabb = 1; ---->  not find in window
+// ---------------------------------------------------------------------------------------------------------------------
+
+
+*/
+// /*1-*/var (user --> no space not | start by number |book words | camelcase ---> like: userName) = "osama";
+// var age = 17;
+// console.log(user)
+// console.log(age)
+//-------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------   /*End Variables*/-------------------------------------------
+
+//  -----------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+
+// -----------------------------------------------------Template(string)------------------------------------------------------------
+
+// let a = "we love"
+//let b = "Java script"
+// let c = "and"
+// let d = "programming"
+// "\n" --> new line
+// --------------------------------------------
+// In ec6 :
+/* console.log(`${a} "" '' \\ ${b}
+ ${c} ${d}`)    بدوا باك سلاش ان   */ 
+  
+***************************************************
+//  ------------------------------------
+  //  console.log(10 + 20);
+  //  console.log(10 + "ahmed")
+  // console.log(2**4)  ----> ** الاس
+  // console.log(10%2)---->  باقى القسمة 
+  // console.log(11%2) ----> remove 1
+// ++num -----> plus on number + print
+// num++---> print+ plus on number
+*********************************************************************
+// -------------------------------------------
+
+// + unary plus [ return number if its not number]
+// + unary negation [ return number if its not number + negates it]
+/*
+console.log(+100)--------->normal number
+console.log(+"100")------------->string number
+console.log(+"-100")---------------> string negative number
+console.log(+"osama")----->NAN
+console.log(+null)---->0
+console.log(+false)---->0
+console.log(+true)---->1
+*/
+******************************************************************************************************************************************************************************************************************************
+//----------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*------------- NUMBER-----------*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+                e6 ---> 000000
+1_000_000
+
+console.log(number.MAX_SAFE_INTEGER);
+console.log(number.MAX_VALUE);
+
+*/ 
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- Number Methods*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+ console.log((100).toString());--------> يتعامل مع رقم على كانه 10.5 مثلا بيفهم ان فى كسور 
+ console.log((100)..toString());----------------> ال .. دول معناهم ان مفيش كسور
+ ------------
+ console.log(100.554555.toFixed(2))------->للتقريب
+ but console.log(Number("100 Osama"))------> result = NaN
+-----------
+
+ console.log(parseInt("100 osama"));-----> analysys the content AND return the number
+ console.log(parseFloat("100.500 osama"))-------------> analysys the content AND return the number
+ ------------
+ console.log(Number.isIntger("100.500"))-----------> TRUE / FALSE
+ console.log(Number.isIntger("100"))-----------> TRUE / FALSE
+ console.log(Number.isIntger(100))-----------> TRUE / FALSE
+ ----------
+ console.log(Number.isNaN("OSAMA"))-----------> TRUE / FALSE
+*/
+
+// --------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+/*             -----------  Math object------------
+console.log(Math.round(99.2))--->لو الرقم بتاعك  تحت النص بيقربه للرقم ال قبله والعكس فوق النص
+
+console.log(Math.ceil(99.2))----> التقريب لفوق دايما
+console.log(Math.floor(99.2))----> التقريب لتحت دايما
+
+
+console.log(Math.min(10 , 20 ,30 ,40 ))
+console.log(Math.max(10 , 20 ,30 ,40 ))
+
+console.log(Math.pow(2,4))-------> الاس
+console.log(Math.random())
+
+console.log(Math.trunc(99.5))-------> بيشيل الكسور
+
+*/
+//-----------*************************************************************************************************************
+**********************************************************************************************************************************
+
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/- String Methods part 1 */-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+-----let theName = "Ahmed"------------
+------let theList = [1,2,3,4]-----------
+
+Acess
+1-By Index = lenght+1
+console.log{theName[1]}
+
+
+2-By ChartAt()
+console.log{ChartAt(1)}
+
+
+2-lenght= Index-1
+بتجيب عدد   ال حروف او عدد اى شى موجود غى الكونتنت
+
+
+3-trim()-------> cut spaces
+
+
+4-toUpperCase
+console.log(toUpperCase())
+
+
+5-toLowerCase
+console.log(toLowerCase())
+
+
+6-Chain Methods جمع كل الطرق
+
+
+ *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- String Methods part2 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+
+let a = "elzero web school"
+
+7-indexOf  ------> if not found youe value return -1    ---------> FOR SEARCH
+console.log(a.indexOf("Value , start"));
+
+8-lastIndexOf------------->if not found youe value return -1  ---------> FOR SEARCH
+console.log(a.lastIndexOf("Value , start , lenght"));
+
+9-slice
+console.log(a.slice("start , end ")); -------> FOR CUTTUNG
+
+10-repeat
+console.log(a.repeat("Times")); -------> FOR REPEAT
+
+11-split
+console.log(a.split("separator , limit"));
+console.log(a.split(""));----> cut all 
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- String Methods part3 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- 
+let a = "elzero web school"
+
+1-substring(Start [Mand], End [Opt] Not Including End)
+Start > End Will Swap
+Start < 0 It Start From 0
+Use Length To Get Last Character
+          -- console.log(a.substring(Start/lenght -5 , End/lenght -3));----> like slice  -- بيعمل  سواب مع بعض وكمان اى رقم اصغر من صفر هيبدأ من صفر
+
+
+2-substr(Start [Mand], Characters To Extract)
+ Start >= Length = ""
+ Negative Start From End
+
+ -- console.log(a.substr(Start,Number of charcters you want to cut it));
+
+
+3-includes(Value [Mand], Start [Opt] Default 0) [ES6]-> true or false
+
+-- console.log(a.includes((Value) web,Start ))
+
+
+4-startsWith(Value [Mand], Start [Opt] Default 0) [ES6]
+
+-- console.log(a.startsWi((Value),Start))---> تبدأ بحرف كذا
+
+
+5-endsWith(Value [Mand], Length [Opt] Default Full Length) [ES6]---->تنتهى بحرف كذا
+
+-- console.log(a.endsWith(Value,Length))
+
+
+     -------------------------------------------------------------------------------------
+     -------------------------------------------------------------------------------------
+     -------------------------------------------------------------------------------------
+     -------------------------------------------------------------------------------------
+
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-Comparison*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+          Comparison Operators
+== Equal
+!= Not Equal
+
+--consol.log(10=="10")Compare value only string or other
+--consol.log(10!="10")  Compare value only string or other
+
+=== Identical 
+!== Not Identical
+
+--consol.log(10)  Compare value + ( Type )
+--consol.log(10)   Compare value + ( Type )
+
+> Larger Than
+>= Larger Than Or Equal
+
+--consol.log(10>10)
+
+--consol.log(10>=10)
+
+
+< Smaller Than
+<= Smaller Than Or Equal
+
+--consol.log(10<=10)
+--consol.log(10<10)
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+*-/////////////////////////*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+ ------------------------------------------------------------------
+ ------------------------------------------------------------------
+                                                                      ------------------------Logical Operators--------------------------
+   !   (Not)
+   && (And)
+   | |   (Or)
+
+     ------------------------------------------------------------------
+ ------------------------------------------------------------------
+                                               ------------------------Control Flow--------------------------
+let price = 100;
+let discount = true ;
+let discountAmount = 30;
+let country = "Egypt";
+
+1- if
+if (discount === true) {
+  price -= discountAmount;
+}
+
+
+2- else if ----- if condition not verfied second condition verfied
+
+let price = 100;
+let discount = false ;
+let discountAmount = 30;
+let country = "Egypt";
+
+if (discount === true) {   ///------------> not Verfied
+  price -= discountAmount;
+} else if (country === "Egypt) {  ///--------------> Verfied
+price -= 40;
+}
+
+
+3-else
+
+let price = 100;
+let discount = false ;
+let discountAmount = 30;
+let country = "japan";
+
+if (discount === true) {   ///------------> not Verfied
+  price -= discountAmount;
+} else if (country === "Egypt) {  ///-------------->not Verfied
+price -= discountAmount;
+} else {
+price -= 10;
+}
+
+console.log(price);
+
+ ------------------------------------------------------------------
+ ------------------------------------------------------------------
+                                                                                                                                            -------------------Nested if -----------------
+
+let price = 100;
+let discount = false ;
+let discountAmount = 30;
+let country = "Egypt";
+let student = true;
+
+if (discount === true) {   ///------------> not Verfied
+
+
+  price -= discountAmount;
+
+
+} else if (country === "Egypt" ) {  ---> (((START)))
+
+if (student===true) {
+price -= discountAmount + 30;
+} else{
+  price -= discountAmount + 10;
+}
+
+} ------> (((END)))     else {
+
+
+price -= 10;
+
+
+}
+
+console.log(price);
+
+ ------------------------------------------------------------------
+ ------------------------------------------------------------------
+                                                                                                            ----------------------Conditional (Ternary) Operator---------------------
+let theName  = "Mona";
+let theGender  = "Female";
+let theAge =30;
+
+if (theGender === "Male")  {
+  console.log("Mr");
+} else{
+  console.log("Mrs");
+}
+
+
+//to write Conditional (Ternary) Operator
+
+theGender === "Male" ? console.log("Mr") : console.log("Mrs")
+
+let result = theGender === "Male" ? "Mr" : "Mrs"
+
+document.write(result)
+
+console.log(`Hello ${ theGender === "Male" ? "Mr" : "Mrs"} ${theName} `)
+
+
+theAge < 20 
+?  console.log(20)
+ : theAge > 20 && theAge < 60
+   ? console.log("20 to 60 ")
+  :  theAge > 60
+   ? console.log("Larger Than 60") 
+    : console.log("Unknown")
+
+الشرط قبله (:)
+
+
+
+
+
+ ------------------------------------------------------------------
+ ------------------------------------------------------------------
+                                -----------------Nullish Coalescing And Logical-----------------                                 
+
+
+
+logical or | |    for 
+
+Null + undefined + Any False value
+
+Nullish  Coalescing orerator ??
+Null + undefined
+
+let price = 100;
+
+console.log(`the price is ${price | | 200}`);  ---> ال 200 بترجع تلقائى لو حاجة من 3
+console.log(`the price is ${price ?? 200}`);
+
+
+----------------------------------------------------------------------
+---------------------------------------------------------------
+                                  ----------------------siwtch statement------------------------
+
+let day = 5;
+
+siwtch statement{
+  case 1:
+code block 
+break;
+
+case 2:
+code block ;
+break;
+
+Default: 
+code block
+break;
+}
+
+Default ordering
+Multiple Match 
+===
+
+let day = 0;
+
+siwtch (day) {
+  case 0 :
+  console.log("saturday");
+  break;
+
+
+    case 1 :
+  console.log("sunday");
+  break;
+    case 2 :
+  console.log("Monday");
+  break;
+
+default:
+console.log("Unknown day")
+}
+
+----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+
+
+
+Arrays 
+creat arrays [Two Methods] new Array() + []
+Access array elements
+nested arraychange array elements
+check for array.isArray(arr);
+
+let myFreind = ["Ahmed"  , "Mohamed" , "Sayed" ];
+
+console.log(`Hello ${myFreind [0]}`)    -------> Hello Ahmed
+
+console.log(`Hello ${myFreind [0] [2]}`)  ---------------->>hello m
+---------------------------------------Nested array---------------------------------
+
+
+let myFreind = ["Ahmed"  , "Mohamed" , "Sayed" , ["Marwan" , "Yasser"]];========>> nested array
+console.log(`Hello ${myFreind [3] [1] [2]}`)
+
+                                                                 ----------------------------------Array-----------------------------------
+console.log(myFreind);
+myFreind[1] = "Mohamoud";
+console.log(myFreind);
+                                                                 --------------------------------------- Start Nested array---------------------------------
+console.log(myFreind);
+myFreind[1] = "Mohamoud";
+console.log(myFreind);
+myFreind[3] = "Mohamoud";
+console.log(myFreind);
+
+
+console.log(Array.isArray(myFriend))  ===> to check arrays
+
+--------------------------------------- End Nested array---------------------------------
+
+----------------------------------Start Arrays Length------------------------------
+index start from 0 [0,1,2]
+
+let myFreind = ["Ahmed"  , "Mohamed" , "Sayed"]
+console.log(myFreind.Length); // 3
+
+myFreind[3] = "Gamal";===========>>>> (((((((((((((to add item in array)))))))))))))
+or 
+myFreind[myFreind.Length] = "Gamal";===========>>>> (((((((((((((to add item in array)))))))))))))
+
+console.log(myFreind.Length);
+**********************************************|
+                                                                                        |
+(((((((if i update last item in array)))))))                    |
+myFreind[myFreind.Length-1] = "omar"            |            
+                                                                                        |
+                                                                                        |
+***********************************************
+
+**********************************************|
+                                                                                        |
+(((((((if i control no. of item in array)))))))                |
+myFreind.Length = 3                                                 |                       
+                                                                                        |
+                                                                                        |
+**********************************************
+*********************Array Methods***********************
+
+let myFreind = ["Ahmed"  , "Mohamed" , "Sayed"]
+
+
+
+
+push ("" , "") Add elemnts to the End            (((((((ADD)))))))
+
+myFreinds.push("omar" , "ahmed")
+
+console.log(myFreinds);
+====================================================
+
+unshift("" , "") Add elemnts to the first             (((((((ADD)))))))
+
+myFreinds.unshift("omar" , "ahmed")
+
+console.log(myFreinds);
+-------------------------------------------------------------
+
+shift( ) Remove first item         (((((((((REMOVE)))))))))
+
+myFreinds.shift( )
+
+console.log(myFreinds);
+-------------------------------------------------------------
+
+pop( ) Remove last item        (((((((((REMOVE)))))))))
+
+myFreinds.pop( )
+
+console.log(myFreinds);
+------------------------------------------------------------------
+
+              ((((((((((((((((((SEARCH))))))))))))))))))
+
+let myFreind = ["Ahmed"  , "Mohamed" , "Sayed"]
+
+console.log(myFreinds);
+********************************************************************************************************************|
+indexOf(Search elemnts , START  From index [opt])  ======>> ((((((((((((((((((SEARCH)))))))))))))))))) From start                        |
+                                                                                                                                                                                                                              |
+console.log(myFreinds.indexOf("Ahmed"));==> 0                                                                                                                                   |
+******************************************************************************************************************** |
+lastIndexof(Search elemnts , START  From index [opt])  ======>> ((((((((((((((((((SEARCH)))))))))))))))))) From end                    |
+                                                                                                                                                                                                                              |                                                                
+console.log(myFreinds.lastIndexof("Ahmed"));                                                                                                                                       |
+*********************************************************************************************************************
+includes (value of find , From index [opt]  [ES7] )                                                                                                                                    |                                                                                                    
+                                                                                                                                                                                                                              |        
+console.log(myFreinds.includes("Ahmed"));       ((((((((((((((((((SEARCH))))))))))))))))))   ===> ((((True or False))))                            |                                                                                                                                                                                                          
+                                                                                                                                                                                                                              |        
+*********************************************************************************************************************
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-((((((((SORTING ARRAYS))))))))*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+
+let myFreind = [  10  , "Sayed"  , "Mohamed" , "90" , 2000 ,  100 ,  20 , "10" , -20 , -10]
+
+console.log(myFreinds);
+console.log(myFreinds.sort());
+console.log(myFreinds.reverse());
+console.log(myFreinds.sort().reverse());
+
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-((((((((SORTING ARRAYS))))))))*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-((((((((SLICING ARRAYS))))))))*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+
+ Arrays Methods [Slicing]
+  --- slice(Start [Opt], End [Opt] Not Including End)
+
+console.log(myFriends.slice(1 , 3));  =====> not including end 
+
+  --- slice() => All Array
+
+console.log(myFriends.slice());
+
+  --- If Start Is Undefined => 0
+
+console.log(myFriends.);
+
+  --- Negative Count From End
+
+console.log(myFriends.slice(-3));
+
+  --- If End Is Undefined || > Indexes => Slice To The End Array.length
+
+console.log(myFriends.);
+
+  --- Return New Array
+
+console.log(myFriends.);
+
+  --- splice(Start [Mand], DeleteCount [Opt] [0-No Remove], The Items To Add [Opt])
+
+console.log(myFriends.splice(0 , 1 --> ahmed , "samer" , "samara"));
+
+  --- If Negative => Start From The End
+
+
+
+
+let myFreind = ["Ahmed"  , "Mohamed" , "Sayed" , "Osama"]
+console.log(myFreinds);
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-/-/-/-/-/-/-/-/-/-/-
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((Joining)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+concat (array , array ) =====>>> Return a new array
+
+let allFriends= myFreind.concat(myNewfreind , ["  " , "  " , "  " ,])
+console.log(allFreinds);
+------------------------------------------
+join(separator)
+console.log(allFreinds.join());  ===>> الفاصل الجواهم
+--------------------------------------------
+let myFreind = ["Ahmed"  , "Mohamed" , "Sayed" , "Osama"]
+let myNewfreind = ["samar" , "samara"]
+let schoolFreind = ["Haytham" , "omar"]
+*********************Array Methods***********************
+
+*/-*/-*/-*/-LOOP & FOR */-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+
+Loop
+1-For 
+for ([1] [2] [3]) {
+  block of code 
+}
+----------------------------------------
+for (let i = 0;   i<10;  i++) {
+  console.log(i)
+}
+
+ */*/*/*/*/*/*/*/*/*/Loop in sequence*/*/*/*/*/*/*/*/*/*/*/
+
+ let myFreind = [ "Ahmed"  , "Mohamed" , "Sayed" , "Osama"]
+
+for ( let i = 0; i< myFreind.Length;  i++ ) {
+  console.log(myFreind [i]);
+}
+
+let myFreind = [ 1, 2 ,"Ahmed"  , "Mohamed" , "Sayed" , "Osama"]
+
+let onlyNames = [] ;
+if (typeof  myFreind[0] === 'string'  ) {
+onlyNames.push(myFreind[0]);
+}
+
+if (typeof  myFreind[1] === 'string'  ) {
+onlyNames.push(myFreind[1]);
+}
+
+if (typeof  myFreind[2] === 'string'  ) {
+onlyNames.push(myFreind[2]);
+}
+
+if (typeof  myFreind[3] === 'string'  ) {
+onlyNames.push(myFreind[3]);
+}
+
+ooooooooooooor
+
+for (let i = 0; i< myFreind.Length;  i++ ) {
+  if (typeof  myFreind[i] === 'string'  ) {
+onlyNames.push(myFreind[i]);
+}
+}
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+*-*-*-*-*-*-*-*-*-*-*-*-Nested loop *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+ let products = ["mouse" , "pad" , "pen"];
+                                                                                               
+  let colors = ["red" , "green"] ;                                                                                       
+                                                    
+let models = [2020 , 2021];
+
+
+for (let i = 0; i< products.Length;  i++ ) {
+  console.log(products[i])
+for (let j = 0; j< colors.Length;  j++)
+{
+console.log(colors [j])
+}
+for (let k = 0; k< colors.models;  k++)
+{
+console.log(models[k])
+}
+}
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-
+*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-------*/-*/-*-/
+
+*-*-*-*-*-*-*-*-*-*-*-loop control*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+break ====> stop in point
+countinue========> exclude it and countinue
+lable
+
+ let products = ["mouse" , "pad" , "pen"];
+                                                                                               
+  let colors = ["red" , "green"] ;             
+
+for (let i = 0; i< products.Length;  i++ ) {
+  console.log(products[i])
+if(products[i]=== "pen"){
+  break;
+}
+
+
+
+  console.log(products[i])
+  
+  
+  
+  }
+------------------------------------
+for (let i = 0; i< products.Length;  i++ ) {
+
+if( typeof products[i]=== "number"){
+  countinue;   =====> exclude it and countinue
+}
+
+
+
+  console.log(products[i])
+  
+  
+  
+  }
+-----------------------------------------------------
+ mainLoop: for (let i = 0; i< products.Length;  i++ ) {
+
+if( typeof products[i]=== "number"){
+  countinue;   =====> exclude it and countinue
+}
+
+  console.log(colors[j])
+  nestedLoop: for (let j = 0; j< colors.Length;  j++ ) {
+    console.log(colors[j])
+  }
+  
+  }
+
+  -****************************************
+  *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+  *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+  *-*-*-*-*-*-*-*-*-Add Product to page*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+ let products = ["mouse" , "pad" , "pen"];
+                                                                                               
+  let colors = ["red" , "green"] ;     
+
+let showCount = 5;
+
+document.write(<h1>show ${showCount} products </h1>)
+
+for ( let i = 0; i<showCount ;  i++) {
+document.write(`  <div>   `)
+document.write(`  [${i+1}]  <h3> ${products[i]} </h3>   `)
+for (let j = 0; j<colors.lenght ;  j++) {
+document.write(` <p>${colors[j]}</p>`)
+} 
+document.write(` <p>${colors.join("  |  ")}</p>`)
+document.write(`  </div>   `)
+}
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+*********************************************************************************
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+///////////////////loop while////////////////////
+
+let products = ["mouse" , "pad" , "pen"];
+let  i= 0;
+while (i< products.lenght ) {
+console.log(i);
+index +=1;
+if (i === 3 ){
+  break;
+}
+}
+--------------------------------
+Do / while =====> مهما حصل هيشتغل
+
+
+let products = ["mouse" , "pad" , "pen"];
+
+let i = 0; 
+while ( false)  {
+console.log(i);
+i++;
+
+}
+
+do{
+console.log(i);
+i++;
+
+} while (false);
+
+*/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/--------------------------------------------------------/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+-////////////////////////-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+*/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/--------------------------------------------------------/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+-////////////////////////-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+*/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/--------------------------------------------------------/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+-////////////////////////-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+*/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/--------------------------------------------------------/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+-////////////////////////-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+*/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/--------------------------------------------------------/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+-////////////////////////-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+  
+
+  -------------------------------------(((((((((FUNCTIONS)))))))))------------------------------------------------------------------
+
+function Hi (userName) {
+console.log(`Hi ${userName}`);
+}
+
+sayHi("osama");  ***>>argument
+sayHi("ahmed"); 
+sayHi("omar"); 
+
+--------------------((((Advance examples))))--------------------
+
+function Hi (userName , age) {
+console.log(`Hi ${userName} your age is ${age}`);
+if (age <20){
+  console.log("app is not suitable for you")
+}
+else{
+  console.log("hello ${userName}  your age is  ${age})
+}
+}
+
+sayHi("osama" , 38);  ***>>argument
+sayHi("ahmed" , 18); 
+sayHi("omar" , 30); 
+
+
+
+---------------------------------------------------------
+
+function generateYears(start , end ,  exclude) {
+  for (let i = start ; i<= end; I++ ) {
+    if (i===exclude) {
+countinue
+    }
+console.log(i);
+  }
+}
+generateYears(1982 , 2021 , 2020)
+
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-function return /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
+
+
+function generate (start , end  ) {
+for (let i = start; i<= end i++ ){
+
+  if ( i === 15 ) {
+    return ` interruptting`;
+  }   console.log(i);
+}
+}
+generate(10 , 20 ) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(0, 25, 50);
+    display: block;
+    width: 100%;
+    
+}
+.parent0{
+    display: flex;
+    position: relative;
+    
+    justify-content: flex-end;
+    width: fit-content;
+    box-shadow: 0px 30px 70px 10px rgba(255, 255, 255, 0.137);
+    height: 60px;
+    margin-top: 15px;
+    width: 100%;
+}
+  .text{
+    
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    width: fit-content;
+  
+    height: fit-content;
+   overflow: hidden;
+    background-position: left;
+    transition: .5s;
+    
+    font-weight: 300;
+    margin-right: 30px;
+    transition: .3s;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.text::after{
+    content: "";
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: .8s;
+    background: red;
+    margin-top: 10px;
+
+
+}
+.text:hover::after{
+    width: 100%;
+    font-size: 50px;
+}
+.text:hover{
+    font-size: 50px;
+    transition: 1s;
+    cursor: pointer;
+    color:rgb(0, 255, 128);
+}
+ul{
+    display: flex;
+    position: absolute;
+    margin-bottom: 200px;
+    left: 0;
+    justify-content: space-evenly;
+    align-items: left;
+    text-align: center;
+    height: 60px;
+    list-style: none;
+    width:90vw;
+}
+ul li a{
+    display: inline-block;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: 0.2s; ;
+    margin-top: -11px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    font-size: 30px;
+    -webkit-transition:.2s ;
+    -moz-transition:.2s ;
+    -ms-transition:.2s ;
+    -o-transition:.2s ;
+}
+
+ ul li a::after{
+    content: "";
+    display: flex;
+    width: 0;
+    height: 3px;
+    background-color: rgb(0, 255, 191);
+    transition: width .5s;
+    margin-top: .5px;
+ }
+ ul li a:hover::after{width: 100%;}
+ ul li :hover{
+    font-size: 40px;
+    transition: .8s;
+      
+}
+.text::first-letter{
+    color:rgb(52, 142, 233); ;
+}
+.content{
+    width: 100%;
+    display:block;
+    justify-content:center;
+}
+
+/* .text:hover{
+    text-shadow: 2px 7px black;
+    padding: 10px;
+    transition: .2s;
+    cursor: pointer;
+} */
+.parent{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 50px;
+}
+.box-shadow{
+    width:fit-content ;
+    height: fit-content;
+    margin-top: 300px;
+position: relative;
+    border: 50px solid rgba(255, 255, 255, 0);
+    transition: .9s;
+    -webkit-transition: .9s;
+    transition-duration: 1s;
+    -moz-transition: .9s;
+    -ms-transition: .9s;
+    -o-transition: .9s;
+}
+
+.box-shadow:hover{
+    border: 7px solid rgba(255, 255, 255, .5);
+    transition: .9s;
+    box-shadow: 20px 20px 10px 5px rgba(255, 255, 255, 0.219);
+    -webkit-transition: .9s;
+    -moz-transition: .9s;
+    -ms-transition: .9s;
+    transition-duration: 1s;
+    -o-transition: .9s;
+}
+.hello-box {
+    text-align:center;
+    display:inline-block;
+    opacity: 70%;
+    
+    align-items: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: fit-content;
+    justify-content: center;
+    text-transform:capitalize;
+     margin-top: 70px;
+     padding: 40px;
+    /* margin-right: 150px; */
+    margin-bottom: 40px; 
+    font-size: 50px;
+    font-weight: 800;
+}
+.smal-text{
+    font-size: 12px;
+    color:rgb(143, 179, 221) ;
+}
+.my:hover{
+    opacity: 100%;
+}
+.my , .smal-text{
+    opacity: 70%;
+    cursor: pointer;
+}
+.parent2{
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 100px;
+}
+.peresent{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 2px;
+    width: fit-content;
+    text-transform: capitalize;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+.small{
+     font-size: 20px;
+     text-transform: capitalize;
+}
+.parent3{
+    display: flex;
+    justify-content: center;
+}
+.pro{
+    width: 450px;
+    display: flex;
+    position: relative;
+overflow: hidden;
+    transition: .3s;
+    justify-content: center;
+    height: 450px;
+    align-items: center;
+    text-align: center;
+    align-items: flex-start;
+    border: 2px solid transparent;
+background-color:  rgba(34, 52, 155, 0.089);
+    border-radius: 20%;
+    margin-right: 300px;
+}
+.pro2{
+      background-color: rgba(34, 52, 155, 0.089);
+    width: 450px;
+     display: flex;
+      position: relative;
+  display: inline-block;
+    justify-content: center;
+    height: 450px;
+      transition: .3s;
+    align-items: flex-start;
+    animation-duration: 2s;
+    margin-bottom: 30px;
+    
+    overflow: hidden;
+    margin-left: 300px;
+    border: 2px solid transparent;
+    border-radius: 20%;
+}
+.pro .con{
+    display: inline;
+    height: 450px;
+    margin-top: 170px;
+    
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    
+    font-size: 90px;
+}
+.pro2 .con2{
+    margin-top:170px;
+    font-size: 90px;
+    margin-left: 150px;
+    
+}
+.pro:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-right: 100px;
+    transition: .3s;
+    cursor: pointer;
+    
+}
+.pro2:hover{
+    
+     padding: 20px;
+    margin-left: 100px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+
+.pro2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color:rgba(255, 255, 255, 0.1); /* اللون الجديد */
+  transition: width .9s ease;
+  z-index: 0;
+}
+
+/* النص يبقى فوق */
+.pro2 .con2 {
+  position: relative;
+  z-index: 1;
+}
+
+.pro2:hover::after {
+  width: 100%;
+}
+
+
+
+
+.pro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color:rgba(255, 255, 255, 0.1); 
+  transition: width .9s ;
+  z-index: 0;
+}
+
+
+.pro .con {
+  position: relative;
+  z-index: 1;
+}
+
+.pro:hover::after {
+  width: 100%;
+}
+
+
+
+
+

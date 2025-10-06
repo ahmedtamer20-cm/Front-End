@@ -1,0 +1,20 @@
+/* body{
+   
+    
+    
+    
+     
+    background-image: url(https://cdn.wallpapersafari.com/38/23/wb5Mx3.jpg);
+    background-repeat:no-repeat ;
+    /* background-attachment: ; */
+    
+
+div{
+    height: 1000px;
+    
+    border: 4px solid red;
+    background-image: url(https://cdn.wallpapersafari.com/38/23/wb5Mx3.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}

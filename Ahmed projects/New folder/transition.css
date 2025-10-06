@@ -1,0 +1,19 @@
+div{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    color: aliceblue;
+   /* transition: all .2s steps(3);  */
+   /* transition: all .2s step-end; بعد نهاية المدة المكتوبة  */
+   /* step-start
+   العكس */
+
+   transition: all .2s ease 2s;
+   
+}
+div:hover{
+    width: 100%;
+    
+    
+    
+}

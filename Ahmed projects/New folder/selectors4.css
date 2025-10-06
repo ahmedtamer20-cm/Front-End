@@ -1,0 +1,8 @@
+h2 + p{
+    color: aqua;
+}
+h2 ~ p{
+    color: aquamarine;
+}
+/* ~ كل ال بعد ال h2 
++ كل البعد ال h2 */

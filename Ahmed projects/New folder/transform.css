@@ -1,0 +1,23 @@
+/* translate = move(x,y) */
+/* كتابة قيمة واحدة بس تعتبر x بسش */
+/* scale= zoom in , zoom out */
+
+div{
+    height: 80px;
+    width: 90px;
+    background-color: aqua;
+    /* transform: translate(100px,0); */
+    /* transform: translateX(200px); */
+    /* transform: translateY();
+    transform: scaleX(4); */
+    margin-left: 30%;
+    margin-top: 10%;
+    /* transform:rotate(-30deg) ;
+    /* default value 1 */
+    /* transform: skew(500deg,50deg); */ */
+    /* matrix(scaleX , skewX,scaleY, translate) */
+    transform: translate(100px,0);
+
+
+
+}

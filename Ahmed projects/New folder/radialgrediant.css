@@ -1,0 +1,4 @@
+div{
+    height: 600px;
+    background-image: radial-gradient(circle 1000px at right top, red, yellow, blue);
+}

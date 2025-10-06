@@ -1,0 +1,7 @@
+ul,ol{
+    list-style-image: url(twitter.png);
+}
+li{
+    background: yellow;
+}
+/* list-style: type position image */

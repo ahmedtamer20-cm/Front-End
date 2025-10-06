@@ -1,0 +1,24 @@
+/* 
+Block
+
+take full width if not find width
+ add line break
+ مفيش حاجة منهم بتيجى جنب التانية 
+ respect all 
+*/
+/* 
+inline
+
+ dont add line break
+                لا يحترم تحدد لا طول ولا عرض
+ 
+مش بيحترم paddingوmargin الا من اليمين والشمال 
+لو حطيت حاجة بلوك تحته هتيجى معاه تحته بالظبط
+*/
+/* 
+inline-block
+
+بيحترم كل حاجة 
+
+
+*/

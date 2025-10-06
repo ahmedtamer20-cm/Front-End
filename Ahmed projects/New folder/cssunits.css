@@ -1,0 +1,22 @@
+ p{
+    font-size: 3rem;
+} 
+/* 3*root ال هو اصلا16 px */
+/* الا لو انت غيرته */
+div{
+    font-size: 20px;
+}
+p{
+    font-size: 2em;
+}
+/* em ياخد الرقم ويضربها فى قيمة الاب */
+div{
+    background: yellowgreen;
+    width: 200px;
+}
+p{
+    background: red;
+    width: 100vw;
+    height: 100vh;
+}
+/* vw يعنى المساحة من العرض ال قدامك */

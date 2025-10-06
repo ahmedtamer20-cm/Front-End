@@ -1,0 +1,37 @@
+.parent{
+    background-color: red;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(4,100px);
+gap: 10px;
+grid-template-areas: 
+
+"head head head "
+"nav main sidebar"
+"nav main sidebar"
+"footer footer footer"
+;
+}
+.parent div{
+    background-color: gold;
+}
+.header{
+    /* grid-column: 1/-1; */
+    grid-area: head;
+}
+.nav{
+    /* grid-row: 2/4; */
+    grid-area: nav;
+}
+.main{
+ 
+ grid-area: main;   /* grid-row: 2/4; */
+}
+.sidebar{
+    /* grid-row: 2/4; */
+    grid-area: sidebar;
+}
+.footer{
+    /* grid-column: 1/-1; */
+    grid-area: footer;
+}
