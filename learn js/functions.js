@@ -81,77 +81,24 @@ console.log(calc(10 , 20 , 30 , 40 , 50 , 60))
 
 
 
-//========================================ultimate practice
-
-function showInfo ( us = "Un" , ag = "Un" , rt = 0 , show= "Yes" ,  ...sk   ) {
-document.writeln(`<div>`);
-document.writeln(`<h2>Welcome , ${us}</h2>`)
-document.writeln(`<p>Age: , ${ag}</p>`)
-document.writeln(`<p>Hour Rate:  $${rt}</p>`)
-document.writeln(`</div>`);
-if (show === "Yes" ) {
-    if(sk.length > 0 )  {
-document.writeln(`<p> skills: ${sk.join(" | ")} </p>`);
-    }else{
-document.writeln(`<p> Skills : no skills</p>`);        
+function showInfo ( us = "Un" , ag = "Un" , rt = 0 , gn = "Un" , show= "Yes" ,  ...sk   ) {
+    document.writeln(`<div>`)
+document.writeln(`<h2>Hi , ${us}</h2>`)
+document.writeln(`<p> Age is : ${ag} Years </p>`)
+document.writeln(`<p>   Your Hour Rate is :  $${rt}</p>`)
+document.writeln(`<p> Your Gender is : ${gn}</p>`)
+document.writeln(`</div>`)
+if (show === "Yes") {
+    if (sk.length >  0 ){
+        document.writeln(`My skills is : ${sk.join(" - ")}`)
+    }else {
+        document.writeln(`  My skills is : ${ "No skills"}`)
     }
-document.writeln(`<p> ${sk.join(" | ")} </p>`);
-}else{
-document.writeln(`<p> Skills is Hidden</p>`);
-}
-document.writeln(`<div>`);
+}else {
+    document.writeln(`${"Skills is hidden"}`)
 }
 
-showInfo("Ahmed" , 19 , 20 , "No" ,"Html"  , "css");
 
-//=========================================
-//==============================================
-//Functions Anonymous
-
-let calculator = function (num1 , num2) {
-    return num1 + num2 ;
-}
-console.log(`${calculator(10 , 20)}`)
-
-//================================
-//================================
-//================================
-//Return Nested function
-// Ex. 1
-function sayMessage (fName , lName) {
-let message = `Hello`
-function concatMsg () {
-    message = `${message} ${fName} ${lName}     `
-}
-concatMsg ();
-return message ;
-}
-console.log(sayMessage ( "osama", "ahmed" ))
-//--------------------------------------------
-// Ex. 2
-function sayMessage (fName , lName) {
-let message = `Hello`
-function concatMsg () {
-    return `${message} ${fName} ${lName}     `
 }
 
-return  concatMsg () ;
-}
-console.log(sayMessage ( "osama", "ahmed" ))
-
-//--------------------------------------------
-// Ex. 3
-function sayMessage (fName , lName) {
-let message = `Hello`
-function concatMsg () {
-    function getFullName () {
-        return ` ${fName}  ${lName} `
-    }
-    return `${message} ${ getFullName ()}     `
-}
-
-return  concatMsg () ;
-}
-console.log(sayMessage ( "osama", "ahmed" ))
-
-
+showInfo("Ahmed" , "19"  ,"1500" , "Male" , "Yes" , "Html " , "Css"  , "Js"  , "React" )
