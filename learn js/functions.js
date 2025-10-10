@@ -102,3 +102,14 @@ if (show === "Yes") {
 }
 
 showInfo("Ahmed" , "19"  ,"1500" , "Male" , "Yes" , "Html " , "Css"  , "Js"  , "React" )
+
+//=========================================
+//==============================================
+//Functions Anonymous
+
+let calculator = function (num1 , num2) {
+    return num1 + num2 ;
+}
+console.log(`${calculator(10 , 20)}`)
+
+//-=========================-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
