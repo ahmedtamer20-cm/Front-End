@@ -86,8 +86,8 @@ myElemnt.innerHTML= "text from <span>main.js</span> file "
 myElemnt.textContent= "text from <span>main.js</span> file "
 
 document.images[0].src = "https://google.com"
-document.images[0].alt = "Alternate"
-document.images[0].title = "Picture"
+document.images[0].alt = "ahmed tamer"
+document.images[0].title = "Pic"
 document.images[0].id = "Picture"
 document.images[0].className = "Pic"
 
@@ -139,23 +139,23 @@ querySelector(".ilove-front-end")
 console.log(
     mQ.innerHTML
 )
-
-
-
-
-
-
-
-
-
+//-set
+mQ.innerHTML="<span>helo<span>"
 
 //------------------practcing----------------------------
 //----------------practcing------------------------------
+//ckeck attributes
 
+console.log(document.getElementsByTagName("p")[0].attributes)
 
+let myP = document.getElementsByTagName("p")[0]
 
-
-
+if (myP.hasAttribute("data-src"))
+{
+console.log("found")
+}else {
+    console.log(`Not found`)
+}
 
 
 
